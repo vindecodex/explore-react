@@ -1,0 +1,10 @@
+.form-container {
+	border: 1px solid #ececec;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.primay-bg {
+	background: #4287f5;
+	color: #fff;
+}

@@ -3,22 +3,36 @@ import '../assets/css/formComponent.css';
 
 import ListComponent from './ListComponent';
 
-const FormComponent = () => {
-	const [tasks, setTask] = useState([])
-	const [text, setText] = useState('');
 
-	const addToTask = () => {
-		setTask([...tasks, text])
-		setText('');
+const FormComponent = () => {
+	const [taskList, setTaskList] = useState([]);
+	const [task, setTask] = useState('');
+	const [currentID, setCurrentID] = useState(0);
+
+	const addToTaskList = () => {
+		setCurrentID(currentID + 1)
+		setTaskList([
+			{
+				id: currentID,
+				active: true,
+				task
+			},
+			...taskList
+		])
+		setTask('');
 	}
 
 	return (
 		<Fragment>
 			<div className="form-container">
-				<textarea value={ text } onChange={(e) => setText(e.target.value)}></textarea>
-				<button class="primary-bg" onClick={() => addToTask()} >Add</button>
+				<textarea value={task} onChange={(e) => setTask(e.target.value)} placeholder="Todo..."></textarea>
+				<button className="primary-bg" onClick={() => addToTaskList()}>Add</button>
 			</div>
-			<ListComponent task={tasks} />
+			{
+				taskList.map((item, index) => (
+					<ListComponent key={item.id} data={item} taskList={taskList} setTaskList={setTaskList} />
+				))
+			}
 		</Fragment>
 	)
 }

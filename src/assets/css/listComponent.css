@@ -3,5 +3,40 @@
 	border: 1px solid #000;
 	border-radius: 10px;
 	padding: 10px;
-	text-align: center;
+	margin: 5px 0;
+	position: relative;
+}
+
+.danger-bg {
+	background: #fc0362;
+	color: #fff;
+}
+
+.box input[type="checkbox"] {
+	width: auto;
+	height: auto;
+	position: absolute;
+	transform: translate(0, -80%);
+	top: 50%;
+	left: 10px;
+}
+
+.box label {
+	padding: 0 0 0 30px;
+}
+
+.box label.passive {
+	text-decoration: line-through;
+	color: gray;
+}
+
+.box button {
+	width: auto;
+	position: absolute;
+	transform: translate(0, -50%);
+	top: 50%;
+	right: 10px;
+	border: none;
+	border-radius: 10px;
+	padding: 5px;
 }

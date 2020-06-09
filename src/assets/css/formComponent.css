@@ -1,10 +1,31 @@
 .form-container {
 	border: 1px solid #ececec;
 	border-radius: 10px;
-	padding: 10px;
+	padding: 20px;
+	margin: 20px 0;
 }
 
-.primay-bg {
+.primary-bg {
 	background: #4287f5;
 	color: #fff;
+}
+
+.form-container textarea {
+	resize: none;
+	border-radius: 10px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.form-container textarea:focus {
+	/* instead of outline use box-shadow if it has radius */
+	/* outline: 1px solid #4287f5; */
+	outline: none;
+	box-shadow: 0 0 0 1px #4287f5;
+}
+
+.form-container button {
+	padding: 10px;
+	border-radius: 10px;
+	border: none;
 }

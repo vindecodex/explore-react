@@ -24,6 +24,7 @@ const FormComponent = () => {
 
 	return (
 		<Fragment>
+			<h1>Todo</h1>
 			<div className="form-container">
 				<textarea value={task} onChange={(e) => setTask(e.target.value)} placeholder="Todo..."></textarea>
 				<button className="primary-bg" onClick={() => addToTaskList()}>Add</button>

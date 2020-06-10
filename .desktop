@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=TODO
+Icon=/home/your-user/TODO-linux-x64/resources/app/icon.png
+Exec=/home/your-user/TODO-linux-x64/TODO
+Comment=TODO
+Categories=Development;
+Terminal=false
+StartupWMClass=TODO
+

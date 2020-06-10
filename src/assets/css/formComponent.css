@@ -5,16 +5,10 @@
 	margin: 20px 0;
 }
 
-.primary-bg {
-	background: #4287f5;
-	color: #fff;
-}
-
 .form-container textarea {
 	resize: none;
 	border-radius: 10px;
 	padding: 10px;
-	box-sizing: border-box;
 }
 
 .form-container textarea:focus {

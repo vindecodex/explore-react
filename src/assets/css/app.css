@@ -1,10 +1,37 @@
 * {
 	font-family: sans-serif;
 	font-size: 20px;
+	box-sizing: border-box;
+}
+
+h1 {
+	font-size: 40px;
+	margin: 0;
+	background: #4287f5;
+	color: #fff;
+	padding: 10px;
 }
 
 button:focus {
 	outline: none;
+}
+
+.danger-bg {
+	background: #fc0362;
+	color: #fff;
+}
+
+.danger-bg:hover {
+	background: #f16b9e;
+}
+
+.primary-bg {
+	background: #4287f5;
+	color: #fff;
+}
+
+.primary-bg:hover {
+	background: #6599ea;
 }
 
 .wrapper {

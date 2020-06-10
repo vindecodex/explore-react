@@ -1,15 +1,8 @@
 .box {
 	width: 100%;
-	border: 1px solid #000;
-	border-radius: 10px;
-	padding: 10px;
+	border: 1px solid #ececec;
 	margin: 5px 0;
 	position: relative;
-}
-
-.danger-bg {
-	background: #fc0362;
-	color: #fff;
 }
 
 .box input[type="checkbox"] {
@@ -23,6 +16,8 @@
 
 .box label {
 	padding: 0 0 0 30px;
+	display: block;
+	padding: 30px 90px 30px 40px;
 }
 
 .box label.passive {
